@@ -11,10 +11,10 @@ import { NativeSyntheticEvent, TextInputSubmitEditingEventData } from 'react-nat
 import Colors from '../constants/colors';
 import { WebView } from 'react-native-webview';
 import { ShouldStartLoadRequest } from 'react-native-webview/lib/WebViewTypes';
-import urlParser from '../utils/UrlParser';
+import urlParser from '../utils/urlParser';
 
 function WebviewScreen(): React.JSX.Element {
-  const [url, setUrl] = React.useState('https://cotnmin.dev');
+  const [url, setUrl] = React.useState('https://www.google.com');
   const [searchUrl, setSearchUrl] = React.useState(url);
   const inputRef = React.useRef<TextInput>(null);
 
